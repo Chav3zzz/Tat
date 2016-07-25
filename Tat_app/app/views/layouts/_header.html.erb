@@ -2,32 +2,47 @@
 <div class="header">
     <div class="wrapper">
         <div class="brand">
-            <a href="artists/index.html.erb"><!--<img src="assets/img/logo-restaurants.png" alt="logo">-->TATTED</a>
-        </div>
-        <nav class="navigation-items">
+          <%= link_to image_tag("https://addons.cdn.mozilla.net/user-media/addon_icons/533/533508-64.png?modified=1465586417"), artists_path %>
+          </div>
+            <nav class="navigation-items">
             <div class="wrapper">
-                <ul class="main-navigation navigation-top-header"></ul>
-                <ul class="user-area">
-                    <!-- <li><a href="sign-in.html">Sign In</a></li> -->
-                    <li><%= link_to "Sign in", new_user_session_path %></li>
-                    <!-- <li><a href="register.html"><strong>Register</strong></a></li> -->
-                    <li><%= link_to "Register", new_user_registration_path %></li>
-                </ul>
-                <a href="submit.html" class="submit-item">
-                    <div class="content"><span>Submit Your Item</span></div>
-                    <div class="icon">
-                        <i class="fa fa-plus"></i>
-                    </div>
-                </a>
-                <div class="toggle-navigation">
-                    <div class="icon">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
+            <ul class="main-navigation navigation-top-header"></ul>
+            <ul class="user-area">
+              <% if user_signed_in? %>
+                <li>
+                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                </li>
+              <% else %>
+                <li>
+                  <%= link_to "Sign in", new_user_session_path %>
+                </li>
+              <% end %>
+
+              <% if user_signed_in? %>
+                <li>
+                  <%= link_to('Edit registration', edit_user_registration_path) %>
+                </li>
+              <% else %>
+                <li>
+                  <%= link_to('Join', new_user_registration_path)  %>
+                </li>
+              <% end %>
+            </ul>
+            <a href="submit.html" class="submit-item">
+              <div class="content"><span>Submit Your Item</span></div>
+              <div class="icon">
+                <i class="fa fa-plus"></i>
+              </div>
+            </a>
+            <div class="toggle-navigation">
+              <div class="icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
             </div>
+          </div>
         </nav>
+      </div>
     </div>
-</div>
-<!-- end Navigation-->
+    <!-- end Navigation-->

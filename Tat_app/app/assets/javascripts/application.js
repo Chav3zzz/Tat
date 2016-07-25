@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require before.load
+//= require bootstrap.min
+//= require smoothscroll
+//= require bootstrap-select.min
+//= require custom
+//= require maps 
 //= require_tree .
