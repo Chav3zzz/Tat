@@ -1,5 +1,5 @@
 class Review < ActiveRecord::Base
 
-  belongs_to :artist
+  belongs_to :artist, optional: true
 
 end
