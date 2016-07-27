@@ -13,11 +13,9 @@
 
     <link rel="stylesheet" href="../vendor/assets/stylesheets/green.scss"> -->
 
-    <title>Spotter - Universal Directory Listing HTML Template</title>
+    <title>Tatted</title>
 
 </head>
-
-<body onunload="" class="map-fullscreen page-homepage navigation-off-canvas" id="page-top">
 
 <!-- Outer Wrapper-->
 <div id="outer-wrapper">
@@ -40,12 +38,16 @@
                         <div class="container">
                             <h1>Find Tattoo Artists in Your Area</h1>
                             <div class="search-bar horizontal">
-                                <form class="main-search border-less-inputs background-dark narrow" role="form" method="post" action="?">
+                                <%= form_tag search_artists_path, method: :get do |f| %>
                                     <div class="input-row">
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label for="keyword">Keyword</label>
                                             <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
-                                        </div>
+                                        </div> -->
+                                        <!-- <%= form_tag search_artists_path, method: :get do |f| %>
+                                          <%= text_field_tag :location, nil, placeholder: "Find Tattoo Artist" %>
+                                          <%= submit_tag 'Search' %>
+                                        <% end %> -->
                                         <!-- /.form-group -->
                                         <!-- <div class="form-group">
                                             <label for="model">Place Type</label>
@@ -54,22 +56,24 @@
                                                 <option value="2">Realism Tattoo</option>
                                                 <option value="3">Other</option>
 
+
                                             </select>
                                         </div> -->
+
                                         <!-- /.form-group -->
                                         <div class="form-group">
-                                            <label for="location">Location</label>
+                                            <%= label :location, "Search Nearby Tattoo Artists : " %>
                                             <div class="input-group location">
-                                                <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                                              <%= text_field_tag :location, params[:location], :required => true%>
                                             </div>
                                         </div>
                                         <!-- /.form-group -->
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                            <%= submit_tag "Search", class: "btn btn-default" %>
                                         </div>
                                         <!-- /.form-group -->
                                     </div>
-                                </form>
+                                <% end %>
                                 <!-- /.main-search -->
                             </div>
                             <!-- /.search-bar -->
