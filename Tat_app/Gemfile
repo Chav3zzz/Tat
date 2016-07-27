@@ -36,6 +36,9 @@ gem 'devise'
 #Location
 gem 'geocoder'
 
+#Google Maps
+gem 'gmaps4rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

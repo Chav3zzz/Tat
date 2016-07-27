@@ -6,14 +6,20 @@ class Artist < ActiveRecord::Base
 
   geocoded_by :full_address
   after_validation :geocode
+  # acts_as_gmappable # to allow the gem on this model
 
   # def full_address
   #   [address1, address2, city, state, zipcode].join(', ')
   # end
 
   def full_address
-  "#{address1}, #{address2}, #{city}, #{state} #{zipcode}"
+  "#{address1}, #{address2}, #{city}, #{state}, #{zipcode}"
 end
+
+# the address to get the coordinates when the object is saved
+  def gmaps4rails_address
+    "#{address1}, #{address2}, #{city}, #{state}, #{zipcode}"
+  end
 
   def self.search(params)
     # artists = Artist.where(category_id: params[:category].to_i)

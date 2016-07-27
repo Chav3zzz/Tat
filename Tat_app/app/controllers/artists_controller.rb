@@ -6,7 +6,11 @@ class ArtistsController < ApplicationController
     else
       @artists = Artist.all
     end
+      @hash = Gmaps4rails.build_markers(@artists) do |artist, marker|
+      marker.lat artist.latitude
+      marker.lng artist.longitude
   end
+end
 
   def new
     @artist = Artist.new
