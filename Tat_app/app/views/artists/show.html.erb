@@ -27,8 +27,7 @@
                             <section class="block" id="main-content">
                                 <header class="page-title">
                                     <div class="title">
-                                        <h1>Max Five Lounge</h1>
-                                        <figure>63 Birch Street</figure>
+                                        <h1><%= @artist.name %></h1>
                                     </div>
                                     <div class="info">
                                         <div class="type">
@@ -44,21 +43,12 @@
                                         <section>
                                             <header><h3>Contact</h3></header>
                                             <address>
-                                                <div>Max Five Lounge</div>
-                                                <div>63 Birch Street</div>
-                                                <div>Granada Hills, CA 91344</div>
+                                                <div><%= @artist.address1 %></div>
+                                                <div><%= @artist.city %>, <%= @artist.state %> <%= @artist.zipcode %></div>
                                                 <figure>
                                                     <div class="info">
                                                         <i class="fa fa-mobile"></i>
-                                                        <span>818-832-5258</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <i class="fa fa-phone"></i>
-                                                        <span>+1 123 456 789</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <i class="fa fa-globe"></i>
-                                                        <a href="#">www.maxfivelounge.com</a>
+                                                        <span><%= @artist.mobile %></span>
                                                     </div>
                                                 </figure>
                                             </address>
@@ -67,7 +57,7 @@
                                         <!--Rating-->
                                         <section class="clearfix">
                                             <header class="pull-left"><a href="#reviews" class="roll"><h3>Rating</h3></a></header>
-                                            <figure class="rating big pull-right" data-rating="4"></figure>
+                                            <figure class="rating big pull-right" data-rating="4">****</figure>
                                         </section>
                                         <!--end Rating-->
                                         <!--Events-->

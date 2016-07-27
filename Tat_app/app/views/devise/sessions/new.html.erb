@@ -1,41 +1,41 @@
-<h2>Sign in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
-<div class="form-group">
-    <%= f.label :email, class: "col-sm-2 control-label" %>
-    <div class="col-sm-6">
-        <%= f.email_field :email, autofocus: true , class: "form-control" %>
-    </div>
-</div>
-
-<div class="form-group">
-    <%= f.label :password, class: "col-sm-2 control-label" %>
-    <div class="col-sm-6">
-        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
-    </div>
-</div>
-
-<% if devise_mapping.rememberable? -%>
-<div class="form-group">
-    <div class="col-sm-6 col-sm-offset-2">
-        <%= f.check_box :remember_me %> <%= f.label :remember_me %>
-    </div>
-</div>
-<% end -%>
-
-<div class="form-group">
-    <div class="col-sm-6 col-sm-offset-2">
-        <%= f.submit "Sign in", class: 'btn btn-primary' %>
-    </div>
-</div>
-
-<div class="form-group">
-    <div class="col-sm-6 col-sm-offset-2">
-        <%= render "devise/shared/links" %>
-    </div>
-</div>
-
-<% end %>
+<div id="page-content">
+    <section class="container">
+        <div class="block">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                    <header>
+                        <h1 class="page-title">Sign In</h1>
+                    </header>
+                    <hr>
+                    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
+                        <div class="form-group">
+                            <%= f.label :email, class: "col-sm-2 control-label" %>
+                            <%= f.email_field :email, autofocus: true , class: "form-control" %>
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <%= f.label :password, class: "col-sm-2 control-label" %>
+                            <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+                        </div><!-- /.form-group -->
+                        <div class="form-group clearfix">
+                            <%= f.submit "Sign in", class: "btn pull-right btn-default" %>
+                        </div><!-- /.form-group -->
+                        <% if devise_mapping.rememberable? -%>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-2">
+                                <%= f.check_box :remember_me %> <%= f.label :remember_me %>
+                            </div>
+                        </div>
+                        <% end -%>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-2">
+                                <%= render "devise/shared/links" %>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!--Page Footer-->
 <footer id="page-footer">
