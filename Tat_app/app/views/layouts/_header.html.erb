@@ -3,7 +3,8 @@
     <div class="wrapper">
         <div class="brand">
           <!-- <%= link_to image_tag("https://addons.cdn.mozilla.net/user-media/addon_icons/533/533508-64.png?modified=1465586417"), artists_path %> -->
-          <%=link_to( image_tag("tattedpic.png", :class => "logo"), artists_path) %>
+          <%=link_to( image_tag("BlueTatText.png", :class => "logo"), artists_path) %>
+
           </div>
             <nav class="navigation-items">
             <div class="wrapper">
@@ -11,32 +12,31 @@
             <ul class="user-area">
               <% if user_signed_in? %>
                 <li>
-                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
                 </li>
                 <li>
-                  <%= link_to('Create Profile', new_artist_path) %>
+                    <%= link_to('Edit registration', edit_user_registration_path) %>
                 </li>
-              <% else %>
-                <li>
-                  <%= link_to 'Sign In', new_user_session_path %>
-                </li>
-              <% end %>
-
-              <% if user_signed_in? %>
-                <li>
-                  <%= link_to('Edit account', edit_user_registration_path) %>
-                </li>
-              <% else %>
-                <li>
-                  <%= link_to('Register', new_user_registration_path)  %>
-                </li>
-              <% end %>
-            </ul>
-
-          
+                    <% if current_user.artist %>
+                  <li>
+                      <%= link_to "Edit profile", edit_artist_path(current_user.artist) %>
+                  </li>
+                    <% else %>
+                  <li>
+                      <%= link_to('Create Profile', new_artist_path) %>
+                  </li>
+                    <% end %>
+                <% else %>
+                  <li>
+                    <%= link_to 'Sign In', new_user_session_path %>
+                  </li>
+                  <li>
+                    <%= link_to('Register', new_user_registration_path) %>
+                  </li>
+                <% end %>
+              </ul>
             </div>
           </div>
         </nav>
       </div>
     </div>
-    <!-- end Navigation-->

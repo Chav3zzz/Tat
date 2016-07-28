@@ -18,9 +18,24 @@ end
 
   def create
       @artist = Artist.new(artist_params)
+      @artist.user = current_user
       @artist.save
       redirect_to artist_path(@artist)
   end
+
+  def edit
+    @artist = Artist.find(params[:id])
+  end
+
+  def update
+    @artist = Artist.find(params[:id])
+
+  if @artist.update_attributes(params.require(:artist).permit(:name, :description, :address1, :address2, :city, :state, :zipcode, :phone, :email, :mobile))
+    redirect_to artist_path
+  else
+    render :edit
+  end
+end
 
   def show
     @artist = Artist.find(params[:id])

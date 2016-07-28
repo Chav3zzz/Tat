@@ -2,6 +2,7 @@ class Artist < ActiveRecord::Base
 
   has_many   :reviews
   belongs_to :category, optional: true
+  belongs_to :user, optional: true
   validates_presence_of :name
 
   geocoded_by :full_address

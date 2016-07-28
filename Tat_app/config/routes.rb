@@ -11,5 +11,6 @@ end
   root 'artists#index'
   get "artists/" => "artists#index"
   get "artists/new" => "artists#new"
+  get "artists/:id/edit" => "artists#edit"
 
 end
