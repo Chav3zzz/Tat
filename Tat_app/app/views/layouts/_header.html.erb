@@ -2,9 +2,9 @@
 <div class="header">
     <div class="wrapper">
         <div class="brand">
-          <%= link_to image_tag("https://addons.cdn.mozilla.net/user-media/addon_icons/533/533508-64.png?modified=1465586417"), artists_path %>
+          <!-- <%= link_to image_tag("https://addons.cdn.mozilla.net/user-media/addon_icons/533/533508-64.png?modified=1465586417"), artists_path %> -->
+          <%=link_to( image_tag("tattedpic.png", :class => "logo"), artists_path) %>
           </div>
-            <!-- <%= link_to "SIGN UP", new_artist_path %> -->
             <nav class="navigation-items">
             <div class="wrapper">
             <ul class="main-navigation navigation-top-header"></ul>
@@ -32,13 +32,8 @@
                 </li>
               <% end %>
             </ul>
-            
-            <div class="toggle-navigation">
-              <div class="icon">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div>
+
+          
             </div>
           </div>
         </nav>
