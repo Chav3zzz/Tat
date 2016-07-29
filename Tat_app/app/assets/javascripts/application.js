@@ -17,7 +17,6 @@
 //= require smoothscroll
 //= require bootstrap-select.min
 //= require custom
-//= require maps
 //= require underscore
 //= require gmaps/google
 //= require_tree .

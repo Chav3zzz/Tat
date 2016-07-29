@@ -166,7 +166,7 @@ $(document).ready(function($) {
             }, 2000)
         }
         return false;
-    });	
+    });
 
 //  iCheck -------------------------------------------------------------------------------------------------------------
 
@@ -279,7 +279,7 @@ $(window).load(function(){
     var $equalHeight = $('.equal-height');
     for( var i=0; i<$equalHeight.length; i++ ){
         equalHeight( $equalHeight );
-    }	
+    }
 });
 
 $(window).resize(function(){
@@ -456,7 +456,7 @@ function equalHeight(container){
 // Initialize Owl carousel ---------------------------------------------------------------------------------------------
 
 function initializeOwl(_rtl){
-    $.getScript( "assets/js/owl.carousel.min.js", function( data, textStatus, jqxhr ) {
+    $.getScript( "assets/javascripts/owl.carousel.min.js", function( data, textStatus, jqxhr ) {
         if ($('.owl-carousel').length > 0) {
             if ($('.carousel-full-width').length > 0) {
                 setCarouselWidth();
