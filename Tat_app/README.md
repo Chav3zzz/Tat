@@ -5,7 +5,7 @@ Find Tattoo Artists in your area.
 - Ruby on Rails
 - JavaScript/jQuery
 - PostgreSQL
-- Google Maps API
+- Google Maps API with latitude/longitude gem
 - CSS
 - HTML
 
