@@ -1,4 +1,4 @@
-# Tatted
+# Tatted. Built in one week sprint. More changes to come.
 Find Tattoo Artists in your area.
 
 # Technologies
