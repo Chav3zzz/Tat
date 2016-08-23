@@ -1,9 +1,10 @@
 # Tatted. Built in one week sprint. More changes to come.
 Find Tattoo Artists in your area.
-Search [here.](http://fathomless-oasis-85228.herokuapp.com/ "Title")
+Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying profiles on Heroku.)
 
 # Technologies
 - Ruby on Rails
+- Heroku
 - JavaScript/jQuery
 - PostgreSQL
 - Google Maps API with latitude/longitude gem
