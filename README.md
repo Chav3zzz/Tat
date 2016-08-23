@@ -1,5 +1,6 @@
 # Tatted. Built in one week sprint. More changes to come.
 Find Tattoo Artists in your area.
+Search [here.](http://fathomless-oasis-85228.herokuapp.com/ "Title")
 
 # Technologies
 - Ruby on Rails
