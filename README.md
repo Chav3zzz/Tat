@@ -7,7 +7,8 @@ Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently worki
 | Development   | Deployment    |
 | ------------- |:-------------:|
 | Ruby on Rails | Heroku        |
-| JavaScript/jQuery |            |
+| JavaScript/jQuery |           |
+| Bootstrap     |               |
 | PostgreSQL    |
 | Google Maps API |
 | Latitude/longitude Gem
