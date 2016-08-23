@@ -3,14 +3,7 @@ Find Tattoo Artists in your area.
 Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying artist profiles on Heroku.)
 
 # Technologies Used
-- Ruby on Rails
-- Heroku
-- JavaScript/jQuery
-- PostgreSQL
-- Google Maps API with latitude/longitude gem
-- CSS
-- HTML
-- 
+
 | Development   | Deployment    |
 | ------------- |:-------------:|
 | Ruby on Rails | Heroku        |
