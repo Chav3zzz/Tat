@@ -2,7 +2,7 @@
 Find Tattoo Artists in your area.
 Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying artist profiles on Heroku.)
 
-# Technologies
+# Technologies Used
 - Ruby on Rails
 - Heroku
 - JavaScript/jQuery
@@ -13,9 +13,12 @@ Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently worki
 - 
 | Development   | Deployment    |
 | ------------- |:-------------:|
-| Ruby on Rails | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+| Ruby on Rails | Heroku        |
+| JavaScript/jQuery |            |
+| PostgreSQL    |               |
+| HTML          |               |
+| CSS           |               |
+| Google Maps API |             |
 
 # Description
 A website that allows people interested in getting a tattoo to search nearby tattoo artist profiles. A user can search any location for an artist profile nearby.
