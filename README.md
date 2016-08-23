@@ -8,10 +8,12 @@ Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently worki
 | ------------- |:-------------:|
 | Ruby on Rails | Heroku        |
 | JavaScript/jQuery |            |
-| PostgreSQL    |               |
+| PostgreSQL    |
+| Google Maps API |
+| Latitude/longitude Gem
 | HTML          |               |
 | CSS           |               |
-| Google Maps API |             |
+
 
 # Description
 A website that allows people interested in getting a tattoo to search nearby tattoo artist profiles. A user can search any location for an artist profile nearby.
