@@ -1,6 +1,6 @@
 # Tatted. Built in one week sprint. More changes to come.
 Find Tattoo Artists in your area.
-Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying profiles on Heroku.)
+Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying artist profiles on Heroku.)
 
 # Technologies
 - Ruby on Rails
