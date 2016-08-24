@@ -2,7 +2,7 @@
 Find Tattoo Artists in your area.
 Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying artist profiles on Heroku.)
 
-![alt tag]([URL=http://s1181.photobucket.com/user/Chav3zzz/media/tat1_zpsslawdyzj.png.html])
+![alt tag](http://s1181.photobucket.com/user/Chav3zzz/media/tat1_zpsslawdyzj.png.html])
 
 
 # Technologies Used
