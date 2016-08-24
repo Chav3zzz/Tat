@@ -2,6 +2,9 @@
 Find Tattoo Artists in your area.
 Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently working on google maps displaying artist profiles on Heroku.)
 
+# Description
+A website that allows people interested in getting a tattoo to search nearby tattoo artist profiles. A user can search any location for an artist profile nearby.
+
 ### Google Maps location search for artist profiles nearby
 ![alt tag](http://i1181.photobucket.com/albums/x425/Chav3zzz/tat1_zpsslawdyzj.png "Google Maps location search")
 ### Profile
@@ -26,6 +29,3 @@ Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title") (Currently worki
 | HTML          |               |
 | CSS           |               |
 
-
-# Description
-A website that allows people interested in getting a tattoo to search nearby tattoo artist profiles. A user can search any location for an artist profile nearby.
