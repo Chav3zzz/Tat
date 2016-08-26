@@ -1,4 +1,4 @@
-# Tatted. 
+# TATTED
 ## Built in one week sprint. More Changes to come.
 Find Tattoo Artists in your area. (E.g. Search Los Angeles for tattoo artists.)
 Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title")
