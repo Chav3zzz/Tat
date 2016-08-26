@@ -17,11 +17,11 @@ $(document).ready(function($) {
 
     adaptBackgroundHeight();
 
-    $('.quick-view, .results .item').live('click',  function(){
-        var id = $(this).attr('id');
-        quickView(id);
-        return false;
-    });
+    // $('.quick-view, .results .item').live('click',  function(){
+    //     var id = $(this).attr('id');
+    //     quickView(id);
+    //     return false;
+    // });
 
     // Scrollbar on "Results" section
 
@@ -73,82 +73,6 @@ $(document).ready(function($) {
         }, 100);
     });
 
-//  Expand content on click --------------------------------------------------------------------------------------------
-
-    $('.expand-content').live('click',  function(e){
-        e.preventDefault();
-        var children = $(this).attr('data-expand');
-        var parentHeight = $(this).closest('.expandable-content').height();
-        var contentSize = $( children + ' .content' ).height();
-        $( children ).toggleClass('collapsed');
-        $( this ).toggleClass('active');
-        $( children ).css( 'height' , contentSize );
-        if( !$( children).hasClass('collapsed') ){
-            setTimeout(function() {
-                $( children ).css('overflow', 'visible');
-            }, 400);
-        }
-        else {
-            $( children ).css('overflow', 'hidden');
-        }
-        $('.has-child').live('click',  function(e){
-            var parent = $(this).closest('.expandable-content');
-            var childHeight = $( $(this).attr('data-expand') + ' .content').height();
-            if( $(this).hasClass('active') ){
-                $(parent).height( parent.height() + childHeight )
-            }
-            else {
-                $(parent).height(parentHeight);
-            }
-        });
-    });
-
-// Set width for inputs in horizontal search bar -----------------------------------------------------------------------
-
-    $( "#redefine-search-form" ).load( "assets/external/_search-bar.html", function() {
-        setInputsWidth();
-        //autoComplete();
-    });
-
-//    if( $('#location').length ){
-//        autoComplete();
-//    }
-
-// Keyboard Shortcuts --------------------------------------------------------------------------------------------------
-
-    $(document).bind('keypress', 'F', function(){
-        $('.redefine-search .expand-content').trigger('click');
-        if( !$('.search-bar').hasClass('collapsed') ){
-            setTimeout(function() {
-                $('.search-bar input').first().focus();
-            }, 200);
-        }
-        return false;
-    });
-
-    $(document).bind('keypress', 'M', function(){
-        $('.header .toggle-navigation').trigger('click');
-        return false;
-    });
-
-    $(document).bind('keypress', '+', function(){
-        $('.header .submit-item').trigger('click');
-        return false;
-    });
-
-    $(document).keydown(function(e) {
-        switch(e.which) {
-            case 37: // left
-                $('.item-slider').trigger('prev.owl.carousel');
-                break;
-            case 39: // right
-                $('.item-slider').trigger('next.owl.carousel');
-                break;
-            case 27: // ESC
-                $('.modal-background').trigger('click');
-                break;
-        }
-    });
 
 //  Smooth Navigation Scrolling ----------------------------------------------------------------------------------------
 

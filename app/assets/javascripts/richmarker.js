@@ -57,8 +57,8 @@ function RichMarker(opt_options) {
 
   this.setValues(options);
 }
-RichMarker.prototype = new google.maps.OverlayView();
-window['RichMarker'] = RichMarker;
+// RichMarker.prototype = new google.maps.OverlayView();
+// window['RichMarker'] = RichMarker;
 
 
 /**

@@ -9,8 +9,12 @@ class ArtistsController < ApplicationController
       @hash = Gmaps4rails.build_markers(@artists) do |artist, marker|
       marker.lat artist.latitude
       marker.lng artist.longitude
+    end
+    p 'hey'
+    p @artists
+    p @hash
+    p 'hello'
   end
-end
 
   def new
     @artist = Artist.new
