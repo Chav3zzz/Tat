@@ -1,7 +1,8 @@
-# Tatted. Built in one week sprint. More Changes to come.
+# Tatted. 
+## Built in one week sprint. More Changes to come.
 Find Tattoo Artists in your area. (E.g. Search Los Angeles for tattoo artists.)
 Search [here.](https://dry-sierra-70053.herokuapp.com/ "Title")
-# Description
+## Description
 A website that allows people interested in getting a tattoo to search nearby tattoo artist profiles. A user can search any location for an artist profile nearby.
 
 ### Google Maps location search for artist profiles nearby
