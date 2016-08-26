@@ -10,10 +10,6 @@ class ArtistsController < ApplicationController
       marker.lat artist.latitude
       marker.lng artist.longitude
     end
-    p 'hey'
-    p @artists
-    p @hash
-    p 'hello'
   end
 
   def new
