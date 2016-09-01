@@ -19,6 +19,8 @@ A website that allows people interested in getting a tattoo to search nearby tat
 | CSS           |               |
 
 
+### Homepage
+![alt tag](http://i1181.photobucket.com/albums/x425/Chav3zzz/tatting_zpsealw1rx0.png "Homepage")
 ### Google Maps location search for artist profiles nearby
 ![alt tag](http://i1181.photobucket.com/albums/x425/Chav3zzz/tat1_zpsslawdyzj.png "Google Maps location search")
 ### Profile
